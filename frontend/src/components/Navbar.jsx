@@ -3,6 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo-grayscale-removebg-preview.png';
 import { FaRegUser, FaHeart, FaShoppingCart, FaSearch } from "react-icons/fa";
 import axios from 'axios';
+import * as bootstrap from 'bootstrap';
+
+
 
 export const Navbar = () => {
   const [email, setemail] = useState('');

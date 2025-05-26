@@ -12,6 +12,7 @@ import CartPretected from './components/CartPretected';
 import DeliveryTracking from './pages/DeliveryTracking';
 import { SearchResult } from './pages/SearchResult';
 import AddProductForm from './pages/AddProductForm';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 
