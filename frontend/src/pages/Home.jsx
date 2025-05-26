@@ -91,9 +91,18 @@ export const Home = () => {
                   alt={cat.label}
                   style={{ width: "70px", height: "70px", objectFit: "contain", marginBottom: "10px" }}
                 />
-                <div style={{
-                  fontSize: "14px", color: "#333", WebkitLineClamp: 1,
-                }}>{cat.label}</div>
+               <div style={{
+  fontSize: "14px",
+  color: "#333",
+  display: "-webkit-box",
+  WebkitLineClamp: 1,
+  WebkitBoxOrient: "vertical",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+  whiteSpace: "nowrap"
+}}>
+  {cat.label}
+</div>
               </div>
             </div>
           ))}
@@ -152,7 +161,7 @@ export const Home = () => {
       {/* Best Sellers Section */}
       <div className="container mt-4">
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <h3 className="fw-bold">Best Sellers</h3>
+          <h3 className="fw-bold">Best Sellers test</h3>
           <a href="#" className="btn btn-link text-decoration-none">View All</a>
         </div>
 

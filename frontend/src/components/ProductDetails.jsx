@@ -146,90 +146,93 @@ const ProductDetails = () => {
           )}
         </div>
 
-        {/* Right Side: Product Details */}
-        <div className="col-md-7" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
-          <h2>{product.name}</h2>
-          <p className="text-muted">{product.description}</p>
-          <h4 className="text-primary">₹{product.price}</h4>
+      {/* Right Side: Product Details */}
+<div className="col-md-7 mt-3" style={{ maxHeight: '80vh', display: 'flex', flexDirection: 'column' }}>
+  <div style={{ overflowY: 'auto', flex: 1, paddingRight: '1rem' }}>
+    <h2>{product.name}</h2>
+    <p className="text-muted">{product.description}</p>
+    <h4 className="text-primary">₹{product.price}</h4>
 
-          <p className="mb-1">
-            <strong>MRP:</strong>{' '}
-            <span className="text-decoration-line-through text-muted">₹{product.mrp}</span>
-          </p>
-          <p className="mb-2">
-            <strong>You Save:</strong>{' '}
-            <span className="text-success">
-              ₹{(product.mrp - product.price).toFixed(2)} (
-              {Math.round(((product.mrp - product.price) / product.mrp) * 100)}% OFF)
-            </span>
-          </p>
+    <p className="mb-1">
+      <strong>MRP:</strong>{' '}
+      <span className="text-decoration-line-through text-muted">₹{product.mrp}</span>
+    </p>
+    <p className="mb-2">
+      <strong>You Save:</strong>{' '}
+      <span className="text-success">
+        ₹{(product.mrp - product.price).toFixed(2)} (
+        {Math.round(((product.mrp - product.price) / product.mrp) * 100)}% OFF)
+      </span>
+    </p>
 
-          <p>
-            <strong>Delivery by:</strong> {product.deliveryTime}
-          </p>
+    <p>
+      <strong>Delivery by:</strong> {product.deliveryTime}
+    </p>
 
-          <div className="mb-3">
-            <label htmlFor="quantity" className="form-label">
-              Quantity:
-            </label>
-            <input
-              type="number"
-              id="quantity"
-              className="form-control w-25"
-              min="1"
-              value={quantity}
-              onChange={(e) => setQuantity(Number(e.target.value))}
-            />
-          </div>
+    <div className="mb-3">
+      <label htmlFor="quantity" className="form-label">
+        Quantity:
+      </label>
+      <input
+        type="number"
+        id="quantity"
+        className="form-control w-25"
+        min="1"
+        value={quantity}
+        onChange={(e) => setQuantity(Number(e.target.value))}
+      />
+    </div>
 
-          <div className="d-flex mb-3">
-            <button className="btn btn-primary me-2" onClick={handleBuyNow}>
-              Buy Now
-            </button>
-            <button className="btn btn-outline-primary" onClick={handleAddToCart}>
-              Add to Cart
-            </button>
-          </div>
+    <div className="d-flex mb-3">
+      <button className="btn btn-primary me-2" onClick={handleBuyNow}>
+        Buy Now
+      </button>
+      <button className="btn btn-outline-primary" onClick={handleAddToCart}>
+        Add to Cart
+      </button>
+    </div>
 
-          <div className="mt-4">
-            <h5>Product Details</h5>
-            <ul className="list-group">
-              <li className="list-group-item">
-                <strong>Country of Origin:</strong> {product.countryOfOrigin}
-              </li>
-              <li className="list-group-item">
-                <strong>Manufacturer:</strong> {product.manufacturer}
-              </li>
-              <li className="list-group-item">
-                <strong>Packer:</strong> {product.packer}
-              </li>
-              <li className="list-group-item">
-                <strong>Importer:</strong> {product.importer}
-              </li>
-              <li className="list-group-item">
-                <strong>Net Quantity:</strong> {product.netQuantity}
-              </li>
-              <li className="list-group-item">
-                <strong>MRP:</strong> ₹{product.mrp}
-              </li>
-              <li className="list-group-item">
-                <strong>Dimensions:</strong> {product.dimensions}
-              </li>
-              <li className="list-group-item">
-                <strong>Weight:</strong> {product.weight}
-              </li>
-              <li className="list-group-item">
-                <strong>Warranty:</strong> {product.warranty}
-              </li>
-              <li className="list-group-item">
-                <strong>Return Policy:</strong> {product.returnPolicy}
-              </li>
-              <li className="list-group-item">
-                <strong>Seller:</strong> {product.seller}
-              </li>
-            </ul>
-          </div>
-        </div>
+    <div className="mt-4">
+      <h5>Product Details</h5>
+      <ul className="list-group">
+        <li className="list-group-item">
+          <strong>Country of Origin:</strong> {product.countryOfOrigin}
+        </li>
+        <li className="list-group-item">
+          <strong>Manufacturer:</strong> {product.manufacturer}
+        </li>
+        <li className="list-group-item">
+          <strong>Packer:</strong> {product.packer}
+        </li>
+        <li className="list-group-item">
+          <strong>Importer:</strong> {product.importer}
+        </li>
+        <li className="list-group-item">
+          <strong>Net Quantity:</strong> {product.netQuantity}
+        </li>
+        <li className="list-group-item">
+          <strong>MRP:</strong> ₹{product.mrp}
+        </li>
+        <li className="list-group-item">
+          <strong>Dimensions:</strong> {product.dimensions}
+        </li>
+        <li className="list-group-item">
+          <strong>Weight:</strong> {product.weight}
+        </li>
+        <li className="list-group-item">
+          <strong>Warranty:</strong> {product.warranty}
+        </li>
+        <li className="list-group-item">
+          <strong>Return Policy:</strong> {product.returnPolicy}
+        </li>
+        <li className="list-group-item">
+          <strong>Seller:</strong> {product.seller}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
       </div>
 
       {/* Similar Products Section */}
