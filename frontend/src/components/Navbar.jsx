@@ -121,7 +121,7 @@ export const Navbar = () => {
                 <FaRegUser />
               </button>
 
-              <ul className="dropdown-menu dropdown-menu-end p-3" style={{ minWidth: '240px' }}>
+              <ul className="dropdown-menu  dropdown-menu-start dropdown-menu-md-end p-3" style={{ minWidth: '240px' }}>
                 {
                   isLoggedIn() && <>
                     <li className="mb-2 px-2">
