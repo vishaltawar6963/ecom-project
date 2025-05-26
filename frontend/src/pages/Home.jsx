@@ -10,7 +10,7 @@ import electronics from '../assets/electronics.png';
 
 export const Home = () => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);  
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const navigate = useNavigate();
@@ -91,7 +91,9 @@ export const Home = () => {
                   alt={cat.label}
                   style={{ width: "70px", height: "70px", objectFit: "contain", marginBottom: "10px" }}
                 />
-                <div style={{ fontSize: "14px", color: "#333" }}>{cat.label}</div>
+                <div style={{
+                  fontSize: "14px", color: "#333", WebkitLineClamp: 1,
+                }}>{cat.label}</div>
               </div>
             </div>
           ))}
