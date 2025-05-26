@@ -1,0 +1,8 @@
+:root {
+  --bs-primary: #3F0D52;     /* Deep Plum */
+  --bs-secondary: #C4B5FD;   /* Soft Lavender */
+  --bs-success: #FCA5A5;     /* Warm Peach - you can use Accent as success */
+  --bs-body-bg: #F9FAFB;     /* Snow White */
+  --bs-body-color: #111111;  /* Graphite Black */
+}
+

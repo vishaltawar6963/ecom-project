@@ -1,0 +1,36 @@
+// ===========================================
+// ✅ Custom Bootstrap Theme for E-Commerce
+// ===========================================
+
+// STEP 1: Override Bootstrap default variables BEFORE importing Bootstrap
+$primary:    #1E3A8A;   // Navy Blue – Trustworthy
+$secondary:  #FCD34D;   // Soft Gold – Friendly, CTA
+$success:    #10B981;   // Emerald Green – Positive actions
+$info:       #0EA5E9;   // Sky Blue – Help, info
+$warning:    #F97316;   // Orange – Caution/Notice
+$danger:     #EF4444;   // Red – Errors, Deletes
+$light:      #F9FAFB;   // Clean Background
+$dark:       #111827;   // Rich dark for text or footer
+
+$body-bg:    #F9FAFB;
+// $body-bg:    #f3f4f6;
+$body-color: #111827;
+$text-muted: #6B7280;   // Muted gray for subtle text
+
+// Optional - Button Radius & Font Family
+$border-radius: 0.5rem;
+$font-family-base: 'Inter', sans-serif;
+
+// Optional - Custom grays
+$gray-100: #f3f4f6;
+$gray-200: #e5e7eb;
+$gray-300: #d1d5db;
+$gray-400: #9ca3af;
+$gray-500: #6b7280;
+$gray-600: #4b5563;
+$gray-700: #374151;
+$gray-800: #1f2937;
+$gray-900: #111827;
+
+// STEP 2: Import Bootstrap (after overrides)
+@import "bootstrap/scss/bootstrap";
