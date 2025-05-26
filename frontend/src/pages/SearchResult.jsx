@@ -14,7 +14,7 @@ export const SearchResult = () => {
   useEffect(() => {
     const fetchSearchResults = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/products/search?q=${query}`);
+        const res = await axios.get(`https://ecom-project-nktj.onrender.com/api/products/search?q=${query}`);
         setProducts(res.data || []);
         setError(null);
       } catch (err) {

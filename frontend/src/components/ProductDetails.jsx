@@ -58,7 +58,7 @@ const ProductDetails = () => {
   const fetchProductById = async (productId) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/${productId}`
+        `https://ecom-project-nktj.onrender.com/api/products/${productId}`
       );
       const productData = response.data;
       setProduct(productData);

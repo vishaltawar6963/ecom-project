@@ -30,7 +30,7 @@ export const Navbar = () => {
     console.log("Password:", password);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', {
+      const res = await axios.post('https://ecom-project-nktj.onrender.com/api/auth/login', {
         email,
         password
       });

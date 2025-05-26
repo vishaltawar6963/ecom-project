@@ -101,7 +101,7 @@ const AddProductForm = () => {
     }
 
     try {
-      await axios.post('http://localhost:5000/api/products', formData);
+      await axios.post('https://ecom-project-nktj.onrender.com/api/products', formData);
       alert('✅ Product added successfully!');
     } catch (error) {
       console.error(error);
